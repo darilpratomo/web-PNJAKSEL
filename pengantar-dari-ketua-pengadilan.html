@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Pengadilan Negeri Jakarta Selatan Kelas 1A Khusus</title>
+  <meta name="title" content="Pengadilan Negeri Jakarta Selatan Kelas 1A Khusus">
+  <meta name="description" content="Website Resmi Pengadilan Negeri Jakarta Selatan">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo3.png" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/pattern-2.svg">
+  <link rel="preload" as="image" href="./assets/images/pattern-3.svg">
+
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'id', // Bahasa asli website, ganti sesuai bahasa default situsmu
+        layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+      }, 'google_translate_element');
+    }
+  </script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+
+<body id="top">
+
+  <!-- <button class="chatbot-button" onclick="toggleChat()">💬</button>
+    <div class="chat-container" id="chatContainer">
+        <div class="chat-header">
+          <span class="back-arrow" id="backArrow" onclick="showOptions()">&#8592;</span> Chatbot
+          <button class="close-button" onclick="toggleChat()">&times;</button>
+        </div>
+        <div class="chat-body" id="chatBody"></div>
+        <div class="chat-options" id="chatOptions">
+            <button onclick="selectOption('Bagaimana cara mendaftar?')">Bagaimana cara mendaftar?</button>
+            <button onclick="selectOption('Bagaimana cara login?')">Bagaimana cara login?</button>
+            <button onclick="selectOption('Saya lupa kata sandi')">Saya lupa kata sandi</button>
+            <button onclick="selectOption('Jam operasional')">Jam operasional</button>
+            <button onclick="selectOption('Kontak customer service')">Kontak customer service</button>
+            <button onclick="selectOption('Informasi produk')">Informasi produk</button>
+            <button onclick="enableCustomQuestion()">Pertanyaan Lainnya</button>
+        </div>
+        <div class="chat-input" id="chatInput">
+            <input type="text" id="userInput" placeholder="Ketik pesan..." onkeypress="handleKeyPress(event)">
+            <button class="voice-button" onclick="startVoiceRecognition()">🎤</button>
+            <button onclick="sendMessage()">➤</button>
+        </div>
+    </div> -->
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <!-- Bagian paling atas halaman -->
+    <div class="top-bar">
+      <div class="content-container">
+        <div class="date-time-container-horizontal">
+          <div class="day" id="day">Senin</div>
+          <div class="separator">,</div>
+          <div class="date" id="date">01 Januari 2024</div>
+          <div class="separator">-</div>
+          <div class="time" id="time">10:00:00 WIB</div>
+        </div>
+
+        <!-- Ikon Banner -->
+        <img src="./assets/images/berakhlak-bangga-melayani-bangsa.png" alt="Banner Icon" class="banner-icon" />
+
+        <!-- Tombol untuk menampilkan/menyembunyikan translate -->
+        <button class="translate-button" id="translate-btn">Translate</button>
+        <div class="translate-bar" id="google_translate_element" style="display: none;"></div>
+
+        
+      </div>
+    </div>
+    <div class="container">
+
+      <a href="/index.html" class="logo">
+        <img src="./assets/images/logo.png"  alt="PNJS logo" width="100%">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo3.png" width="75" height="175" alt="PNJS logo">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+          <li class="navbar-item">
+              <a href="#" class="navbar-link hover-1" data-nav-toggler>
+                  Tentang Pengadilan
+                  <span class="arrow">&#11206;</span> <!-- Tanda panah turun -->
+              </a>
+              <ul class="dropdown">
+                  <li><a href="/pengantar-dari-ketua-pengadilan.html" class="dropdown-link">Pengantar dari Ketua Pengadilan</a></li>
+                  <li><a href="/visi-dan-misi-pengadilan.html" class="dropdown-link">Visi dan Misi Pengadilan</a></li>
+                  <li>
+                    <a href="#" class="dropdown-link">Profil Pengadilan &#11206;</a>
+                    <ul class="sub-dropdown">
+                        <li><a href="/sejarah-pengadilan.html" class="dropdown-link">Sejarah Pengadilan</a></li>
+                        <li><a href="/struktur-organisasi.html" class="dropdown-link">Struktur Organisasi</a></li>
+                        <li><a href="/wilayah-yurisdiksi.html" class="dropdown-link">Wilayah Yurisdiksi</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-link">Profil Hakim dan Pegawai &#11206;</a>
+                    <ul class="sub-dropdown">
+                        <li><a href="/profil-pejabat-struktural.html" class="dropdown-link">Profil Pejabat Struktural</a></li>
+                        <li><a href="/profil-hakim.html" class="dropdown-link">Profil Hakim</a></li>
+                        <li><a href="/profil-kepaniteraan.html" class="dropdown-link">Profil Kepaniteraan</a></li>
+                        <li><a href="/profil-kesekretariatan.html" class="dropdown-link">Profil Kesekretariatan</a></li>
+                        <li><a href="/profil-panitera-pengganti.html" class="dropdown-link">Profil Panitera Pengganti</a></li>
+                        <li><a href="/profil-pegawai-honorer.html" class="dropdown-link">Profil Pegawai Honorer</a></li>
+                        <li><a href="/profil-pegawai-tidak-tetap.html" class="dropdown-link">Profil Pegawai Tidak Tetap</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-link">Profil Role Model dan Agen Perubahan &#11206;</a>
+                    <ul class="sub-dropdown">
+                        <li><a href="/profil-role-model.html" class="dropdown-link">Profil Role Model</a></li>
+                        <li><a href="/profil-agen-perubahan.html" class="dropdown-link">Profil Agen Perubahan</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-link">Kepaniteraan &#11206;</a>
+                    <ul class="sub-dropdown">
+                        <li><a href="/kepaniteraan-pidana.html" class="dropdown-link">Kepaniteraan Pidana</a></li>
+                        <li><a href="/kepaniteraan-perdata.html" class="dropdown-link">Kepaniteraan Perdata</a></li>
+                        <li><a href="/kepaniteraan-hukum.html" class="dropdown-link">Kepaniteraan Hukum</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-link">Sistem Pengelolaan Pengadilan &#11206;</a>
+                    <ul class="sub-dropdown">
+                        <li><a href="/e-learning.html" class="dropdown-link">E-Learning</a></li>
+                        <li><a href="/kebijakan-yurisprudensi.html" class="dropdown-link">Kebijakan / Yurisprudensi</a></li>
+                        <li><a href="/rencana-strategis.html" class="dropdown-link">Rencana Strategis</a></li>
+                        <li><a href="/rencana-kerja-dan-anggaran.html" class="dropdown-link">Rencana Kerja dan Anggaran</a></li>
+                        <li><a href="/pengawasan-dan-kode-etik-hakim.html" class="dropdown-link">Pengawasan dan Kode Etik Hakim</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-link">PTSP &#11206;</a>
+                    <ul class="sub-dropdown">
+                        <li><a href="/jenis-layanan.html" class="dropdown-link">Jenis Layanan</a></li>
+                        <li><a href="/standar-layanan.html" class="dropdown-link">Standar Layanan</a></li>
+                        <li><a href="/maklumat-pelayanan.html" class="dropdown-link">Maklumat Pelayanan</a></li>
+                        <li><a href="/kompensasi-pelayanan.html" class="dropdown-link">Kompensasi Pelayanan</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-link">Layanan Disabilitas &#11206;</a>
+                    <ul class="sub-dropdown">
+                        <li><a href="/prosedur-pelayanan-bagi-penyandang-disabilitas.html" class="dropdown-link">Prosedur Pelayanan Bagi Penyandang Disabilitas</a></li>
+                        <li><a href="/sarana-prasarana-bagi-penyandang-disabilitas.html" class="dropdown-link">Sarana & Prasarana Bagi Penyandang Disabilitas</a></li>
+                        <li><a href="/si-ketan.html" class="dropdown-link">SI-KETAN</a></li>
+                        <li><a href="/formulir-penilaian-pribadi-untuk-disabilitas.html" class="dropdown-link">Formulir Penilaian Pribadi Untuk Disabilitas</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-link">Tata Tertib di Pengadilan &#11206;</a>
+                    <ul class="sub-dropdown">
+                        <li><a href="/tata-tertib.html" class="dropdown-link">Tata Tertib</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-link">Informasi Perkara &#11206;</a>
+                    <ul class="sub-dropdown">
+                        <li><a href="/delegasi.html" class="dropdown-link">Delegasi</a></li>
+                        <li><a href="/statistik-perkara.html" class="dropdown-link">Statistik Perkara</a></li>
+                        <li><a href="/penelusuran-perkara.html" class="dropdown-link">Penelusuran Perkara</a></li>
+                        <li><a href="/direktori-putusan.html" class="dropdown-link">Direktori Putusan</a></li>
+                    </ul>
+                  </li>
+              </ul>
+          </li>
+          <li class="navbar-item">
+              <a href="#" class="navbar-link hover-1" data-nav-toggler>
+                  Layanan Publik
+                  <span class="arrow">&#11206;</span> <!-- Tanda panah turun -->
+              </a>
+                <ul class="dropdown">
+                  <li>
+                    <a href="#" class="dropdown-link">Laporan &#11206;</a>
+                    <ul class="sub-dropdown">
+                        <li><a href="/ringkasan-laporan-akuntabilitas-kinerja-instansi-pemerintah.html" class="dropdown-link">Ringkasan Laporan Akuntabilitas Kinerja Instansi Pemerintah (LKJIP)</a></li>
+                        <li><a href="/ringkasan-daftar-aset-dan-inventaris.html" class="dropdown-link">Ringkasan Daftar Aset dan Inventaris</a></li>
+                        <li><a href="/laporan-tahunan.html" class="dropdown-link">Laporan Tahunan</a></li>
+                        <li><a href="/laporan-keuangan.html" class="dropdown-link">Laporan Keuangan</a></li>
+                        <li><a href="/sakip.html" class="dropdown-link">SAKIP</a></li>
+                        <li><a href="/laporan-pelayanan-informasi-publik.html" class="dropdown-link">Laporan Pelayanan Informasi Publik</a></li>
+                        <li><a href="/lhkpn-lhkasn.html" class="dropdown-link">LHKPN & LHKASN</a></li>
+                        <li><a href="/laporan-survey-persepsi-anti-korupsi.html" class="dropdown-link">Laporan Survey Persepsi Anti Korupsi (SPAK)</a></li>
+                        <li><a href="/laporan-survey-kepuasan-masyarakat.html" class="dropdown-link">Laporan Survey Kepuasan Masyarakat (SKM)</a></li>
+                        <li><a href="/laporan-survey-harian.html" class="dropdown-link">Laporan Survey Harian (SH)</a></li>
+                        <li><a href="/laporan-survey-persepsi-kualitas-pelayanan-zona-integritas.html" class="dropdown-link">Laporan Survey Persepsi Kualitas Pelayanan (SPKP) Zona Integritas</a></li>
+                        <li><a href="/laporan-survey-persepsi-anti-korupsi-zona-integritas.html" class="dropdown-link">Laporan Survey Persepsi Anti Korupsi (SPAK) Zona Integritas</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-link">Pengumuman &#11206;</a>
+                    <ul class="sub-dropdown">
+                        <li><a href="/denda-tilang.html" class="dropdown-link">Denda Tilang</a></li>
+                        <li><a href="/lelang-barang-dan-jasa.html" class="dropdown-link">Lelang Barang dan Jasa</a></li>
+                        <li><a href="/panggilan-kepada-pihak-yang-tidak-diketahui-alamatnya.html" class="dropdown-link">Panggilan Kepada Pihak yang Tidak Diketahui Alamatnya</a></li>
+                        <li><a href="/penerimaan-pegawai.html" class="dropdown-link">Penerimaan Pegawai</a></li>
+                        <li><a href="/pengumuman-lainnya.html" class="dropdown-link">Pengumuman Lainnya</a></li>
+                        <li><a href="/sisa-panjar-perkara.html" class="dropdown-link">Sisa Panjar Perkara</a></li>
+                        <li><a href="/eksekusi.html" class="dropdown-link">Eksekusi</a></li>
+                        <li><a href="/pemberitahuan-tindak-lanjut-eksekusi.html" class="dropdown-link">Pemberitahuan Tindak Lanjut Eksekusi</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="/prosedur-permohonan-informasi.html" class="dropdown-link">Prosedur Permohonan Informasi</a></li>
+                  <li>
+                    <a href="#" class="dropdown-link">Pengaduan Layanan Publik &#11206;</a>
+                    <ul class="sub-dropdown">
+                        <li><a href="/dasar-hukum-regulasi.html" class="dropdown-link">Dasar Hukum/Regulasi</a></li>
+                        <li><a href="/pengaduan.html" class="dropdown-link">Pengaduan</a></li>
+                        <li><a href="/prosedur-pengaduan.html" class="dropdown-link">Prosedur Pengaduan</a></li>
+                        <li><a href="/si-pitung.html" class="dropdown-link">SI-PITUNG</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="/e-brosur.html" class="dropdown-link">E-Brosur</a></li>
+                  <li><a href="/jam-kerja-pelayanan-publik.html" class="dropdown-link">Jam Kerja Pelayanan Publik</a></li>
+                  <li><a href="/jadwal-sidang.html" class="dropdown-link">Jadwal Sidang</a></li>
+                  <li><a href="/eraterang.html" class="dropdown-link">eraterang</a></li>
+                </ul>
+          </li>
+          <li class="navbar-item">
+              <a href="#" class="navbar-link hover-1" data-nav-toggler>
+                  Layanan Hukum
+                  <span class="arrow">&#11206;</span> <!-- Tanda panah turun -->
+              </a>
+              <ul class="dropdown">
+                  <li>
+                    <a href="#" class="dropdown-link">Layanan Hukum Bagi Masyarakat Kurang Mampu &#11206;</a>
+                    <ul class="sub-dropdown">
+                        <li><a href="/peraturan-dan-kebijakan.html" class="dropdown-link">Peraturan dan Kebijakan</a></li>
+                        <li><a href="/prosedur-pembebasan-biaya-perkara.html" class="dropdown-link">Prosedur Pembebasan Biaya Perkara (Prodeo)</a></li>
+                        <li><a href="/zitting-plaats.html" class="dropdown-link">Zitting Plaats</a></li>
+                        <li><a href="/posbakum.html" class="dropdown-link">Posbakum</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-link">Prosedur Pengajuan dan Biaya Perkara &#11206;</a>
+                    <ul class="sub-dropdown">
+                        <li><a href="/prosedur-pengajuan-perkara.html" class="dropdown-link">Prosedur Pengajuan Perkara</a></li>
+                        <li><a href="/biaya-perkara.html" class="dropdown-link">Biaya Perkara</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="/hak-mendapat-bantuan-hukum.html" class="dropdown-link">Hak Mendapat Bantuan Hukum</a></li>
+                  <li><a href="/hak-hak-masyarakat-pencari-keadilan.html" class="dropdown-link">Hak-Hak Masyarakat Pencari Keadilan</a></li>
+                  <li><a href="/mediasi.html" class="dropdown-link">Mediasi</a></li>
+              </ul>
+          </li>
+          <li class="navbar-item">
+              <a href="#" class="navbar-link hover-1" data-nav-toggler>
+                  Berita
+                  <span class="arrow">&#11206;</span> <!-- Tanda panah turun -->
+              </a>
+              <ul class="dropdown">
+                  <li><a href="/video-gallery.html" class="dropdown-link">Video Gallery</a></li>
+                  <li><a href="/berita-terkini.html" class="dropdown-link">Berita Terkini</a></li>
+              </ul>
+          </li>
+          <li class="navbar-item">
+              <a href="#" class="navbar-link hover-1" data-nav-toggler>
+                  Reformasi Birokrasi
+                  <span class="arrow">&#11206;</span> <!-- Tanda panah turun -->
+              </a>
+              <ul class="dropdown">
+                  <li>
+                    <a href="#" class="dropdown-link">Zona Integritas &#11206;</a>
+                    <ul class="sub-dropdown">
+                        <li><a href="/area-i.html" class="dropdown-link">Area I</a></li>
+                        <li><a href="/area-ii.html" class="dropdown-link">Area II</a></li>
+                        <li><a href="/area-iii.html" class="dropdown-link">Area III</a></li>
+                        <li><a href="/area-iv.html" class="dropdown-link">Area IV</a></li>
+                        <li><a href="/area-v.html" class="dropdown-link">Area V</a></li>
+                        <li><a href="/area-vi.html" class="dropdown-link">Area VI</a></li>
+                        <li><a href="/lke-zi.html" class="dropdown-link">LKE ZI</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-link">Akreditasi Penjaminan Mutu &#11206;</a>
+                    <ul class="sub-dropdown">
+                        <li><a href="/sk-tim-akreditasi-penjamin-mutu-pengadilan.html" class="dropdown-link">SK Tim Akreditasi Penjaminan Mutu Pengadilan</a></li>
+                        <li><a href="/manual-mutu.html" class="dropdown-link">Manual Mutu</a></li>
+                        <li><a href="/sertifikat-akreditasi.html" class="dropdown-link">Sertifikat Akreditasi</a></li>
+                        <li><a href="/sk-penetapan-nilai-akreditasi.html" class="dropdown-link">SK Penetapan Nilai Akreditasi</a></li>
+                    </ul>
+                  </li>
+              </ul>
+          </li>
+          <a href="/hubungi-kami.html" class="btn btn-primary">Hubungi Kami</a>
+        </ul>
+      
+      
+
+        <div class="navbar-bottom">
+
+        <p class="copyright">
+          Copyright <span id="current-year"></span> © Pengadilan Negeri Jakarta Selatan
+        </p>
+
+      </nav>
+
+      
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+  <main>
+    <article>
+        <section class="hero">
+            <div class="news3-container">
+                <div>
+                  <!-- Berita Pertama -->
+                  <div class="news2-item">
+                    <h1 class="news2-title">Pengantar dari Ketua Pengadilan</h1>
+                    <div class="news2-left">
+                      <img src="./assets/images/Ketua Pengadilan.png" alt="Icon 1" width="200px">
+                    </div>
+                    <div class="news2-content" style="align-items: center;">
+                      
+                      <div class="news2-right">
+                        <br>
+                        <p class="news2-description">
+                            Dengan memanjatkan Puji Syukur kehadirat Allah SWT, maka dengan didasarkan pada Undang-undang Nomor : 14 Tahun 2008 
+                            tentang Keterbukaan Informasi Publik serta dalam rangka mendukung implementasi Surat Keputusan Ketua Mahkamah Agung 
+                            Nomor: 1-144/KMA/SK/1/2011 tanggal 5 Januari 2011 tentang Pedoman Layanan Informasi di Pengadilan.
+                            <br><br>
+                            Dengan ini segenap jajaran Pegawai Pengadilan Negeri Jakarta Selatan berusaha sedemikian rupa untuk melaksanakan Surat Keputusan tersebut dengan 
+                            memanifestasikan sarana dan prasarana informasi yang interaktif dan dinamis yang diwujudkan kedalam situs web agar dapat memberikan manfaat kepada para 
+                            pencari keadilan, pada umumnya dan khususnya di daerah Pengadilan Negeri Jakarta Selatan.
+                            <br><br>
+                            Dijamin Reformasi dan era keterbukaan informasi pengadaan situs web adalah merupakan suatu hal yang sangat diobutuhkan oleh publik. Dengan terwujudnya 
+                            situs web ini semoga dapat membantu para pencari keadilan dan para insan Pers serta pada akademisi mengetahui pertimbangan hukum, dasar hukum serta dictum 
+                            putusannya, sehingga dapat mengukur adanya kepastian hukum, rasa keadilan dan manfaat dari putusan tersebut.
+                            <br><br>
+                            Semoga Website Pengadilan Negeri Jakarta Selatan dapat bermanfaat bagi kita semua..
+                            <br><br>
+                            Aamiin
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <div data-slider></div>
+        <div data-slider-container></div>
+        <div data-slider-prev></div>
+        <div data-slider-next></div>
+    </article>
+    
+  </main>
+  <!-- 
+    - #FOOTER
+  -->
+    <br>
+  <footer>
+    <div class="container2">
+
+      <div class="card footer">
+
+        <div class="section footer-top">
+
+          <div class="footer-brand">
+            <p class="footer-list-title">Alamat</p>
+
+            <address class="footer-text address">
+              Jl. Ampera Raya No.133, RT.5/RW.10, Ragunan, 
+              <br>Ps. Minggu, Kota Jakarta Selatan, <br>
+              Daerah Khusus Ibukota Jakarta 12540
+            </address>
+
+          </div>
+
+          <div class="footer-brand">
+
+            <p class="footer-list-title">Media Sosial</p>
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/profile.php?id=61550536585070" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+  
+                  <span class="span">Facebook</span>
+                </a>
+              </li>
+  
+              <li>
+                <a href="https://www.linkedin.com/company/pengadilan-negeri-jakarta-selatan/" class="social-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+  
+                  <span class="span">LinkedIn</span>
+                </a>
+              </li>
+  
+              <li>
+                <a href="https://www.instagram.com/pn.jakartaselatan/" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+  
+                  <span class="span">Instagram</span>
+                </a>
+              </li>
+
+      
+
+            </ul>
+
+          </div>
+
+          
+
+        </div>
+
+        <div class="footer-bottom">
+
+          <p class="copyright">
+            © 2025 Pengadilan Negeri Jakarta Selatan Kelas 1A Khusus
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

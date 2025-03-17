@@ -1,0 +1,1604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Pengadilan Negeri Jakarta Selatan Kelas 1A Khusus</title>
+  <meta name="title" content="Pengadilan Negeri Jakarta Selatan Kelas 1A Khusus">
+  <meta name="description" content="Website Resmi Pengadilan Negeri Jakarta Selatan">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo3.png" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/pattern-2.svg">
+  <link rel="preload" as="image" href="./assets/images/pattern-3.svg">
+
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'id', // Bahasa asli website, ganti sesuai bahasa default situsmu
+        layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+      }, 'google_translate_element');
+    }
+  </script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+
+<body id="top">
+
+  <!-- <button class="chatbot-button" onclick="toggleChat()">💬</button>
+    <div class="chat-container" id="chatContainer">
+        <div class="chat-header">
+          <span class="back-arrow" id="backArrow" onclick="showOptions()">&#8592;</span> Chatbot
+          <button class="close-button" onclick="toggleChat()">&times;</button>
+        </div>
+        <div class="chat-body" id="chatBody"></div>
+        <div class="chat-options" id="chatOptions">
+            <button onclick="selectOption('Bagaimana cara mendaftar?')">Bagaimana cara mendaftar?</button>
+            <button onclick="selectOption('Bagaimana cara login?')">Bagaimana cara login?</button>
+            <button onclick="selectOption('Saya lupa kata sandi')">Saya lupa kata sandi</button>
+            <button onclick="selectOption('Jam operasional')">Jam operasional</button>
+            <button onclick="selectOption('Kontak customer service')">Kontak customer service</button>
+            <button onclick="selectOption('Informasi produk')">Informasi produk</button>
+            <button onclick="enableCustomQuestion()">Pertanyaan Lainnya</button>
+        </div>
+        <div class="chat-input" id="chatInput">
+            <input type="text" id="userInput" placeholder="Ketik pesan..." onkeypress="handleKeyPress(event)">
+            <button class="voice-button" onclick="startVoiceRecognition()">🎤</button>
+            <button onclick="sendMessage()">➤</button>
+        </div>
+    </div> -->
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <!-- Bagian paling atas halaman -->
+    <div class="top-bar">
+      <div class="content-container">
+        <div class="date-time-container-horizontal">
+          <div class="day" id="day">Senin</div>
+          <div class="separator">,</div>
+          <div class="date" id="date">01 Januari 2024</div>
+          <div class="separator">-</div>
+          <div class="time" id="time">10:00:00 WIB</div>
+        </div>
+
+        <!-- Ikon Banner -->
+        <img src="./assets/images/berakhlak-bangga-melayani-bangsa.png" alt="Banner Icon" class="banner-icon" />
+
+        <!-- Tombol untuk menampilkan/menyembunyikan translate -->
+        <button class="translate-button" id="translate-btn">Translate</button>
+        <div class="translate-bar" id="google_translate_element" style="display: none;"></div>
+
+        
+      </div>
+    </div>
+    <div class="container">
+
+      <a href="/index.html" class="logo">
+        <img src="./assets/images/logo.png"  alt="PNJS logo" width="100%">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo3.png" width="75" height="175" alt="PNJS logo">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+          <li class="navbar-item">
+              <a href="#" class="navbar-link hover-1" data-nav-toggler>
+                  Tentang Pengadilan
+                  <span class="arrow">&#11206;</span> <!-- Tanda panah turun -->
+              </a>
+              <ul class="dropdown">
+                  <li><a href="/pengantar-dari-ketua-pengadilan.html" class="dropdown-link">Pengantar dari Ketua Pengadilan</a></li>
+                  <li><a href="/visi-dan-misi-pengadilan.html" class="dropdown-link">Visi dan Misi Pengadilan</a></li>
+                  <li>
+                    <a href="#" class="dropdown-link">Profil Pengadilan &#11206;</a>
+                    <ul class="sub-dropdown">
+                        <li><a href="/sejarah-pengadilan.html" class="dropdown-link">Sejarah Pengadilan</a></li>
+                        <li><a href="/struktur-organisasi.html" class="dropdown-link">Struktur Organisasi</a></li>
+                        <li><a href="/wilayah-yurisdiksi.html" class="dropdown-link">Wilayah Yurisdiksi</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-link">Profil Hakim dan Pegawai &#11206;</a>
+                    <ul class="sub-dropdown">
+                        <li><a href="/profil-pejabat-struktural.html" class="dropdown-link">Profil Pejabat Struktural</a></li>
+                        <li><a href="/profil-hakim.html" class="dropdown-link">Profil Hakim</a></li>
+                        <li><a href="/profil-kepaniteraan.html" class="dropdown-link">Profil Kepaniteraan</a></li>
+                        <li><a href="/profil-kesekretariatan.html" class="dropdown-link">Profil Kesekretariatan</a></li>
+                        <li><a href="/profil-panitera-pengganti.html" class="dropdown-link">Profil Panitera Pengganti</a></li>
+                        <li><a href="/profil-pegawai-honorer.html" class="dropdown-link">Profil Pegawai Honorer</a></li>
+                        <li><a href="/profil-pegawai-tidak-tetap.html" class="dropdown-link">Profil Pegawai Tidak Tetap</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-link">Profil Role Model dan Agen Perubahan &#11206;</a>
+                    <ul class="sub-dropdown">
+                        <li><a href="/profil-role-model.html" class="dropdown-link">Profil Role Model</a></li>
+                        <li><a href="/profil-agen-perubahan.html" class="dropdown-link">Profil Agen Perubahan</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-link">Kepaniteraan &#11206;</a>
+                    <ul class="sub-dropdown">
+                        <li><a href="/kepaniteraan-pidana.html" class="dropdown-link">Kepaniteraan Pidana</a></li>
+                        <li><a href="/kepaniteraan-perdata.html" class="dropdown-link">Kepaniteraan Perdata</a></li>
+                        <li><a href="/kepaniteraan-hukum.html" class="dropdown-link">Kepaniteraan Hukum</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-link">Sistem Pengelolaan Pengadilan &#11206;</a>
+                    <ul class="sub-dropdown">
+                        <li><a href="/e-learning.html" class="dropdown-link">E-Learning</a></li>
+                        <li><a href="/kebijakan-yurisprudensi.html" class="dropdown-link">Kebijakan / Yurisprudensi</a></li>
+                        <li><a href="/rencana-strategis.html" class="dropdown-link">Rencana Strategis</a></li>
+                        <li><a href="/rencana-kerja-dan-anggaran.html" class="dropdown-link">Rencana Kerja dan Anggaran</a></li>
+                        <li><a href="/pengawasan-dan-kode-etik-hakim.html" class="dropdown-link">Pengawasan dan Kode Etik Hakim</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-link">PTSP &#11206;</a>
+                    <ul class="sub-dropdown">
+                        <li><a href="/jenis-layanan.html" class="dropdown-link">Jenis Layanan</a></li>
+                        <li><a href="/standar-layanan.html" class="dropdown-link">Standar Layanan</a></li>
+                        <li><a href="/maklumat-pelayanan.html" class="dropdown-link">Maklumat Pelayanan</a></li>
+                        <li><a href="/kompensasi-pelayanan.html" class="dropdown-link">Kompensasi Pelayanan</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-link">Layanan Disabilitas &#11206;</a>
+                    <ul class="sub-dropdown">
+                        <li><a href="/prosedur-pelayanan-bagi-penyandang-disabilitas.html" class="dropdown-link">Prosedur Pelayanan Bagi Penyandang Disabilitas</a></li>
+                        <li><a href="/sarana-prasarana-bagi-penyandang-disabilitas.html" class="dropdown-link">Sarana & Prasarana Bagi Penyandang Disabilitas</a></li>
+                        <li><a href="/si-ketan.html" class="dropdown-link">SI-KETAN</a></li>
+                        <li><a href="/formulir-penilaian-pribadi-untuk-disabilitas.html" class="dropdown-link">Formulir Penilaian Pribadi Untuk Disabilitas</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-link">Tata Tertib di Pengadilan &#11206;</a>
+                    <ul class="sub-dropdown">
+                        <li><a href="/tata-tertib.html" class="dropdown-link">Tata Tertib</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-link">Informasi Perkara &#11206;</a>
+                    <ul class="sub-dropdown">
+                        <li><a href="/delegasi.html" class="dropdown-link">Delegasi</a></li>
+                        <li><a href="/statistik-perkara.html" class="dropdown-link">Statistik Perkara</a></li>
+                        <li><a href="/penelusuran-perkara.html" class="dropdown-link">Penelusuran Perkara</a></li>
+                        <li><a href="/direktori-putusan.html" class="dropdown-link">Direktori Putusan</a></li>
+                    </ul>
+                  </li>
+              </ul>
+          </li>
+          <li class="navbar-item">
+              <a href="#" class="navbar-link hover-1" data-nav-toggler>
+                  Layanan Publik
+                  <span class="arrow">&#11206;</span> <!-- Tanda panah turun -->
+              </a>
+                <ul class="dropdown">
+                  <li>
+                    <a href="#" class="dropdown-link">Laporan &#11206;</a>
+                    <ul class="sub-dropdown">
+                        <li><a href="/ringkasan-laporan-akuntabilitas-kinerja-instansi-pemerintah.html" class="dropdown-link">Ringkasan Laporan Akuntabilitas Kinerja Instansi Pemerintah (LKJIP)</a></li>
+                        <li><a href="/ringkasan-daftar-aset-dan-inventaris.html" class="dropdown-link">Ringkasan Daftar Aset dan Inventaris</a></li>
+                        <li><a href="/laporan-tahunan.html" class="dropdown-link">Laporan Tahunan</a></li>
+                        <li><a href="/laporan-keuangan.html" class="dropdown-link">Laporan Keuangan</a></li>
+                        <li><a href="/sakip.html" class="dropdown-link">SAKIP</a></li>
+                        <li><a href="/laporan-pelayanan-informasi-publik.html" class="dropdown-link">Laporan Pelayanan Informasi Publik</a></li>
+                        <li><a href="/lhkpn-lhkasn.html" class="dropdown-link">LHKPN & LHKASN</a></li>
+                        <li><a href="/laporan-survey-persepsi-anti-korupsi.html" class="dropdown-link">Laporan Survey Persepsi Anti Korupsi (SPAK)</a></li>
+                        <li><a href="/laporan-survey-kepuasan-masyarakat.html" class="dropdown-link">Laporan Survey Kepuasan Masyarakat (SKM)</a></li>
+                        <li><a href="/laporan-survey-harian.html" class="dropdown-link">Laporan Survey Harian (SH)</a></li>
+                        <li><a href="/laporan-survey-persepsi-kualitas-pelayanan-zona-integritas.html" class="dropdown-link">Laporan Survey Persepsi Kualitas Pelayanan (SPKP) Zona Integritas</a></li>
+                        <li><a href="/laporan-survey-persepsi-anti-korupsi-zona-integritas.html" class="dropdown-link">Laporan Survey Persepsi Anti Korupsi (SPAK) Zona Integritas</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-link">Pengumuman &#11206;</a>
+                    <ul class="sub-dropdown">
+                        <li><a href="/denda-tilang.html" class="dropdown-link">Denda Tilang</a></li>
+                        <li><a href="/lelang-barang-dan-jasa.html" class="dropdown-link">Lelang Barang dan Jasa</a></li>
+                        <li><a href="/panggilan-kepada-pihak-yang-tidak-diketahui-alamatnya.html" class="dropdown-link">Panggilan Kepada Pihak yang Tidak Diketahui Alamatnya</a></li>
+                        <li><a href="/penerimaan-pegawai.html" class="dropdown-link">Penerimaan Pegawai</a></li>
+                        <li><a href="/pengumuman-lainnya.html" class="dropdown-link">Pengumuman Lainnya</a></li>
+                        <li><a href="/sisa-panjar-perkara.html" class="dropdown-link">Sisa Panjar Perkara</a></li>
+                        <li><a href="/eksekusi.html" class="dropdown-link">Eksekusi</a></li>
+                        <li><a href="/pemberitahuan-tindak-lanjut-eksekusi.html" class="dropdown-link">Pemberitahuan Tindak Lanjut Eksekusi</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="/prosedur-permohonan-informasi.html" class="dropdown-link">Prosedur Permohonan Informasi</a></li>
+                  <li>
+                    <a href="#" class="dropdown-link">Pengaduan Layanan Publik &#11206;</a>
+                    <ul class="sub-dropdown">
+                        <li><a href="/dasar-hukum-regulasi.html" class="dropdown-link">Dasar Hukum/Regulasi</a></li>
+                        <li><a href="/pengaduan.html" class="dropdown-link">Pengaduan</a></li>
+                        <li><a href="/prosedur-pengaduan.html" class="dropdown-link">Prosedur Pengaduan</a></li>
+                        <li><a href="/si-pitung.html" class="dropdown-link">SI-PITUNG</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="/e-brosur.html" class="dropdown-link">E-Brosur</a></li>
+                  <li><a href="/jam-kerja-pelayanan-publik.html" class="dropdown-link">Jam Kerja Pelayanan Publik</a></li>
+                  <li><a href="/jadwal-sidang.html" class="dropdown-link">Jadwal Sidang</a></li>
+                  <li><a href="/eraterang.html" class="dropdown-link">eraterang</a></li>
+                </ul>
+          </li>
+          <li class="navbar-item">
+              <a href="#" class="navbar-link hover-1" data-nav-toggler>
+                  Layanan Hukum
+                  <span class="arrow">&#11206;</span> <!-- Tanda panah turun -->
+              </a>
+              <ul class="dropdown">
+                  <li>
+                    <a href="#" class="dropdown-link">Layanan Hukum Bagi Masyarakat Kurang Mampu &#11206;</a>
+                    <ul class="sub-dropdown">
+                        <li><a href="/peraturan-dan-kebijakan.html" class="dropdown-link">Peraturan dan Kebijakan</a></li>
+                        <li><a href="/prosedur-pembebasan-biaya-perkara.html" class="dropdown-link">Prosedur Pembebasan Biaya Perkara (Prodeo)</a></li>
+                        <li><a href="/zitting-plaats.html" class="dropdown-link">Zitting Plaats</a></li>
+                        <li><a href="/posbakum.html" class="dropdown-link">Posbakum</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-link">Prosedur Pengajuan dan Biaya Perkara &#11206;</a>
+                    <ul class="sub-dropdown">
+                        <li><a href="/prosedur-pengajuan-perkara.html" class="dropdown-link">Prosedur Pengajuan Perkara</a></li>
+                        <li><a href="/biaya-perkara.html" class="dropdown-link">Biaya Perkara</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="/hak-mendapat-bantuan-hukum.html" class="dropdown-link">Hak Mendapat Bantuan Hukum</a></li>
+                  <li><a href="/hak-hak-masyarakat-pencari-keadilan.html" class="dropdown-link">Hak-Hak Masyarakat Pencari Keadilan</a></li>
+                  <li><a href="/mediasi.html" class="dropdown-link">Mediasi</a></li>
+              </ul>
+          </li>
+          <li class="navbar-item">
+              <a href="#" class="navbar-link hover-1" data-nav-toggler>
+                  Berita
+                  <span class="arrow">&#11206;</span> <!-- Tanda panah turun -->
+              </a>
+              <ul class="dropdown">
+                  <li><a href="/video-gallery.html" class="dropdown-link">Video Gallery</a></li>
+                  <li><a href="/berita-terkini.html" class="dropdown-link">Berita Terkini</a></li>
+              </ul>
+          </li>
+          <li class="navbar-item">
+              <a href="#" class="navbar-link hover-1" data-nav-toggler>
+                  Reformasi Birokrasi
+                  <span class="arrow">&#11206;</span> <!-- Tanda panah turun -->
+              </a>
+              <ul class="dropdown">
+                  <li>
+                    <a href="#" class="dropdown-link">Zona Integritas &#11206;</a>
+                    <ul class="sub-dropdown">
+                        <li><a href="/area-i.html" class="dropdown-link">Area I</a></li>
+                        <li><a href="/area-ii.html" class="dropdown-link">Area II</a></li>
+                        <li><a href="/area-iii.html" class="dropdown-link">Area III</a></li>
+                        <li><a href="/area-iv.html" class="dropdown-link">Area IV</a></li>
+                        <li><a href="/area-v.html" class="dropdown-link">Area V</a></li>
+                        <li><a href="/area-vi.html" class="dropdown-link">Area VI</a></li>
+                        <li><a href="/lke-zi.html" class="dropdown-link">LKE ZI</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-link">Akreditasi Penjaminan Mutu &#11206;</a>
+                    <ul class="sub-dropdown">
+                        <li><a href="/sk-tim-akreditasi-penjamin-mutu-pengadilan.html" class="dropdown-link">SK Tim Akreditasi Penjaminan Mutu Pengadilan</a></li>
+                        <li><a href="/manual-mutu.html" class="dropdown-link">Manual Mutu</a></li>
+                        <li><a href="/sertifikat-akreditasi.html" class="dropdown-link">Sertifikat Akreditasi</a></li>
+                        <li><a href="/sk-penetapan-nilai-akreditasi.html" class="dropdown-link">SK Penetapan Nilai Akreditasi</a></li>
+                    </ul>
+                  </li>
+              </ul>
+          </li>
+          <a href="/hubungi-kami.html" class="btn btn-primary">Hubungi Kami</a>
+        </ul>
+      
+      
+
+        <div class="navbar-bottom">
+
+        <p class="copyright">
+          Copyright <span id="current-year"></span> © Pengadilan Negeri Jakarta Selatan
+        </p>
+
+      </nav>
+
+      
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+  <main>
+    <article>
+
+      
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home" aria-label="home">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle">Selamat Datang di Website Resmi</p>
+
+            <h1 class="headline headline-1 section-title">
+              <span class="span">Pengadilan Negeri Jakarta Selatan</span>
+            </h1>
+
+            <p class="hero-text">
+              Jl. Ampera Raya No.133, RT.5/RW.10, Ragunan, Ps. Minggu, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12540</p>
+
+            
+            <!--<div class="search-container">
+              <input type="text" class="search-bar" placeholder="Search..." id="search-input">
+              <button class="search-button" id="search-button">
+                <ion-icon name="search" aria-hidden="true"></ion-icon>
+              </button>
+            </div>
+            
+            <div class="input-wrapper" style="background-color: transparent;">
+              <img src="./assets/images/berakhlak-bangga-melayani-bangsa.png" alt="">
+              <input type="email" name="email_address" placeholder="Type your email address" required
+                class="input-field" autocomplete="off">
+
+              <button class="btn btn-primary">
+                <span class="span">Subscribe</span>
+
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+              </button>
+
+            </div>-->
+
+
+          </div>
+
+          <div class="hero-banner">
+
+            <img src="./assets/images/logopnjsnew.png" alt="Ketua Pengadilan" class="w-100">
+
+            <img src="./assets/images/pattern-2.svg" width="27" height="26" alt="shape" class="shape shape-1">
+
+            <img src="./assets/images/pattern-3.svg" width="27" height="26" alt="shape" class="shape shape-2">
+
+          </div>
+
+          <img src="./assets/images/shadow-1.svg" width="500" height="800" alt="" class="hero-bg hero-bg-1">
+
+          <img src="./assets/images/shadow-2.svg" width="500" height="500" alt="" class="hero-bg hero-bg-2">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #TOPICS
+      -->
+
+      <section class="topics" id="topics" aria-labelledby="topic-label">
+        <div class="container">
+
+          <div class="card topic-card" style="background: url(assets/images/background-pulau.png)">
+
+            <div class="card-content">
+
+              
+              <div class="btn-group">
+                <button class="btn-icon" aria-label="previous" data-slider-prev>
+                  <ion-icon name="arrow-back" aria-hidden="true"></ion-icon>
+                </button>
+
+                <button class="btn-icon" aria-label="next" data-slider-next>
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </button>
+              </div>
+
+            </div>
+
+            <div class="slider" data-slider>
+              <ul class="slider-list" data-slider-container>
+
+                <li class="slider-item">
+                  <a href="#" class="slider-card">
+
+                    <figure class="slider-banner img-holder" style="--width: 1007; --height: 618;">
+                      <img src="./assets/images/pn-jaksel-berakhlak.jpg" width="1007" height="618" loading="lazy" alt="Sport"
+                        class="img-cover">
+                    </figure>
+
+                    
+
+                  </a>
+                </li>
+
+                <li class="slider-item">
+                  <a href="#" class="slider-card">
+
+                    <figure class="slider-banner img-holder" style="--width: 1007; --height: 618;">
+                      <img src="./assets/images/pn-jaksel-berakhlak.jpg" width="1007" height="618" loading="lazy" alt="Travel"
+                        class="img-cover">
+                    </figure>
+
+                  
+
+                  </a>
+                </li>
+
+                <li class="slider-item">
+                  <a href="#" class="slider-card">
+
+                    <figure class="slider-banner img-holder" style="--width: 1007; --height: 618;">
+                      <img src="./assets/images/pn-jaksel-berakhlak.jpg" width="1007" height="618" loading="lazy" alt="Design"
+                        class="img-cover">
+                    </figure>
+
+                    
+
+                  </a>
+                </li>
+
+                <li class="slider-item">
+                  <a href="#" class="slider-card">
+
+                    <figure class="slider-banner img-holder" style="--width: 1007; --height: 618;">
+                      <img src="./assets/images/pn-jaksel-berakhlak.jpg" width="1007" height="618" loading="lazy" alt="Movie"
+                        class="img-cover">
+                    </figure>
+
+                    
+
+                  </a>
+                </li>
+
+                <li class="slider-item">
+                  <a href="#" class="slider-card">
+
+                    <figure class="slider-banner img-holder" style="--width: 1007; --height: 618;">
+                      <img src="./assets/images/pn-jaksel-berakhlak.jpg" width="1007" height="618" loading="lazy" alt="Lifestyle"
+                        class="img-cover">
+                    </figure>
+
+                    
+
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <br><br><br>
+
+      <!-- Simple News Slider -->
+      <section class="simple-news-slider" id="news-slider" style="background: url(./assets/images/background-slider.png);">
+        <div class="slider-container">
+
+          <!-- Slide 1 -->
+          <div class="slide">
+            <div class="news-image">
+              <img src="assets/images/dsadsa.png" alt="Gambar Berita 1">
+            </div>
+            <div class="news-text">
+              <h3 class="news-title">Survei Pengadilan Negeri Jakarta Selatan  Dibawah Naungan Baru</h3>
+              <p class="news-description">Upacara Pada Hari Senin, 17 Agustus 2025</p>
+              <button class="read-more-btn" onclick="window.location.href='https://link-berita-1.com';">Baca Selengkapnya</button>
+            </div>
+            
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="slide">
+            <div class="news-image">
+              <img src="assets/images/dsadsa.png" alt="Gambar Berita 2">
+            </div>
+            <div class="news-text">
+              <h3 class="news-title">Judul Berita 2</h3>
+              <p class="news-description">Ini adalah deskripsi singkat berita kedua.</p>
+              <button class="read-more-btn" onclick="window.location.href='https://link-berita-2.com';">Baca Selengkapnya</button>
+            </div>
+            
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="slide">
+            <div class="news-image">
+              <img src="assets/images/dsadsa.png" alt="Gambar Berita 3">
+            </div>
+            <div class="news-text">
+              <h3 class="news-title">Judul Berita 3</h3>
+              <p class="news-description">Ini adalah deskripsi singkat berita ketiga.</p>
+              <button class="read-more-btn" onclick="window.location.href='https://link-berita-3.com';">Baca Selengkapnya</button>
+            </div>
+            
+          </div>
+
+        </div>
+
+        <!-- Slider Navigation -->
+        <button class="prev-btn" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next-btn" onclick="moveSlide(1)">&#10095;</button>
+      </section>
+      <br><br>
+      
+      <div class="news2-container">
+        <div class="news2-row">
+          <!-- Berita Pertama -->
+          <div class="news2-item">
+            <h2 class="news2-title">Cek Denda Tilang</h2>
+            <div class="news2-left">
+              <img src="./assets/images/logo-etilang.png" alt="Icon 1" class="news2-icon">
+            </div>
+            <div class="news2-content" style="align-items: center;">
+              
+              <div class="news2-right">
+                <p class="news2-description">
+                  Informasi Untuk Mengecek Denda Tilang pada Pengadilan Negeri Jakarta Selatan.
+                </p>
+                <form id="fineCheckForm" action="https://sipp.pn-jakartaselatan.go.id/list_perkara/search" method="post" target="_blank">
+                  <input type="text" name="search_keyword" class="card tag-btn2" size="35" placeholder="Masukkan nomor tilang" required>
+                  <input type="hidden" name="enc" value="c1BRQWlocDM3STUxMGl3dW9XUmUyMDB4VUJDRXRvbEZzL1piNnpTTm1sWVdGMldlUWZ6SkpRblBOUEF2THUyWHU2ait2S1h4R0tYZVdSWHc4ZG1iSGc9PQ==">
+                  <button class="news3-read-more-btn" type="submit">Cek Denda Tilang</button>
+              </form>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Berita Kedua -->
+          <div class="news2-item">
+            <h2 class="news2-title">Penelusuran Perkara</h2>
+            <div class="news2-left">
+              <img src="./assets/images/loading_ma.gif" alt="Icon 2" class="news2-icon">
+            </div>
+            <div class="news2-content" style="align-items: center;">
+              
+              <div class="news2-right">
+                <p class="news2-description">
+                  Informasi Penelusuran Perkara pada Pengadilan Negeri Jakarta Selatan.
+                </p>
+                <form id="searchForm" action="https://sipp.pn-jakartaselatan.go.id/list_perkara/search" method="post" target="_blank">
+                  <input type="text" name="search_keyword" class="card tag-btn2" size="35" placeholder="Masukkan nomor perkara" required>
+                  <input type="hidden" name="enc" value="QVpzdHAwdm5WOTBjajFnQ01FdjFkYkNiRzZQOStZMlNqYU0wcUhlb1JJeENMTG1YaDZDSXNKL3dwR2FmYVRPdkZ5bko2YkpDdlhHRzFZaUpZekMwN1E9PQ==">
+                  <button class="news3-read-more-btn" type="submit">Cari Nomor Perkara</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="news2-container">
+        <div class="news2-row">
+          <!-- Berita Pertama -->
+          <div class="news2-item">
+            <h2 class="news2-title">Index Berita</h2>
+            <div class="news2-left">
+              <img src="./assets/images/leaf.png" alt="Icon 1" class="news2-icon">
+            </div>
+            <div class="news2-content" style="align-items: center;">
+              
+              <div class="news2-right">
+                <p class="news2-description">
+                  Kumpulan Berita dan Informasi yang terjadi di Pengadilan Negeri Jakarta Selatan.
+                </p>
+                <button class="news3-read-more-btn" onclick="window.location.href='https://linkberita1.com'">Lebih Lanjut</button>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Berita Kedua -->
+          <div class="news2-item">
+            <h2 class="news2-title">e-Court</h2>
+            <div class="news2-left">
+              <img src="./assets/images/logo-e-court.png" alt="Icon 2" class="news2-icon">
+            </div>
+            <div class="news2-content" style="align-items: center;">
+              
+              <div class="news2-right">
+                <p class="news2-description">
+                  e-Court Mahkamah Agung adalah Layanan Pendaftaran Perkara Online, Pembayaran Online dan Pemanggilan Online.
+                </p>
+                <button class="news3-read-more-btn" onclick="window.location.href='https://linkberita2.com'">Lebih Lanjut</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <div class="news3-container">
+        <!-- Navigation Bars -->
+        <div class="news3-nav">
+          <span class="news3-bar" onclick="showNews(0)">Prosedur Permohonan Informasi</span>
+          <span class="news3-bar" onclick="showNews(1)">Daftar Perkara</span>
+          <span class="news3-bar" onclick="showNews(2)">Prosedur Bantuan Hukum</span>
+        </div>
+      
+        <!-- Berita Pertama -->
+        <div class="news3-item" id="news3-1">
+          <h2 class="news3-title">Bagaimana Cara Mendapatkan Pelayanan Informasi?</h2>
+          <div class="news3-content">
+            <div class="news3-left">
+              <img src="./assets/images/typo-color.png" alt="Icon 1" class="news3-icon">
+            </div>
+            <div class="news3-right">
+              <p class="news3-description">
+                Dalam melaksanakan kegiatan pelayanan publik, Pengadilan Negeri Jakarta Selatan Kelas 1A Khusus berupaya untuk selalu dapat memenuhi harapan masyarakat, khususnya para pencari keadilan. Bila terdapat informasi yang tidak terdapat di situs pengadilan, masyarakat dapat mengajuan permohonan informasi ke Pengadilan Negeri Jakarta Selatan Kelas 1A Khusus.
+              </p>
+              <button class="news3-read-more-btn" onclick="window.location.href='https://linkberita1.com'">Lebih Lanjut</button>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Berita Kedua -->
+        <div class="news3-item" id="news3-2">
+          <h2 class="news3-title">Sistem Informasi Penelusuran Perkara</h2>
+          <div class="news3-content">
+            <div class="news3-left">
+              <img src="./assets/images/cts.png" alt="Icon 2" class="news3-icon">
+            </div>
+            <div class="news3-right">
+              <p class="news3-description">
+                Sistem Informasi Penelusuran Perkara (SIPP) atau Case Tracking System (CTS) adalah aplikasi berbasis web yang diperuntukan bagi pengadilan negeri dalam administrasi dan penelusuran (tracking) terhadap data perkara.
+              </p>
+              <button class="news3-read-more-btn" onclick="window.location.href='https://linkberita2.com'">Lebih Lanjut</button>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Berita Ketiga -->
+        <div class="news3-item" id="news3-3">
+          <h2 class="news3-title">Bantuan Hukum Untuk Masyarakat Tidak Mampu</h2>
+          <div class="news3-content">
+            <div class="news3-left">
+              <img src="./assets/images/posbakum-logo.png" alt="Icon 3" class="news3-icon">
+            </div>
+            <div class="news3-right">
+              <p class="news3-description">
+                Mahkamah Agung RI pada tanggal 9 Januari 2014 telah menerbitkan Peraturan Mahkamah Agung Republik Indonesia Nomor 1 Tahun 2014 tentang Pedoman Pemberian Layanan Hukum Bagi Masyarakat Tidak Mampu di Pengadilan.
+              </p>
+              <button class="news3-read-more-btn" onclick="window.location.href='https://linkberita3.com'">Baca Selengkapnya</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br><br>
+      
+
+      <br><br>
+      <div class="image-grid">
+        <a href="link1.html" class="large-box">
+            <img src="./assets/images/survey-2024-skm-triwulan-ii.jpg" alt="Image 1">
+        </a>
+        <a href="link2.html" class="large-box">
+            <img src="./assets/images/survey-2024-spak-triwulan-ii.jpg" alt="Image 2">
+        </a>
+        <a href="link3.html" class="small-box">
+            <img src="./assets/images/panggilanumumlogo.jpg" alt="Image 3">
+        </a>
+        <a href="link4.html" class="small-box">
+            <img src="./assets/images/pemberitahuantindaklanjuteksekusilogo.png" alt="Image 4">
+        </a>
+        <a href="link5.html" class="small-box">
+            <img src="./assets/images/logo-si-pitung-pt-jakarta.png" alt="Image 5">
+        </a>
+        <a href="link8.html" class="tall-box">
+            <img src="./assets/images/eraterang.png" alt="Image 8">
+        </a>
+        <a href="link7.html" class="small-box">
+            <img src="./assets/images/siketan-logo.png" alt="Image 7">
+        </a>
+        <a href="link6.html" class="small-box">
+            <img src="./assets/images/e-berpadu.png" alt="Image 6">
+        </a>
+        <a href="link9.html" class="wide-box">
+            <img src="./assets/images/siwas.jpg" alt="Image 9">
+        </a>
+    </div>
+    
+      
+      <br><br>
+      <!-- 
+        - #SERVICES
+      -->
+      <section class="services" id="services" aria-labelledby="services-label">
+        <div class="container">
+
+          <h2 class="headline headline-2 section-title text-center">
+            <span class="span">Layanan Kami</span>
+          </h2>
+
+          <p class="section-text text-center">
+            Berikut adalah beberapa layanan yang disediakan oleh Pengadilan Negeri Jakarta Selatan.
+          </p>
+
+          <div class="service-grid">
+
+            <!-- Box 1 -->
+            <a href="https://link1.com" class="service-box">
+              <img src="./assets/images/tilang.png" alt="Icon 1" class="service-icon">
+              <h3 class="service-title">Cek Denda Tilang</h3>
+            </a>
+
+            <!-- Box 2 -->
+            <a href="https://link2.com" class="service-box">
+              <img src="./assets/images/direktori-putusan.png" alt="Icon 2" class="service-icon">
+              <h3 class="service-title">Direktori Putusan Mahkamah Agung</h3>
+            </a>
+
+            <!-- Box 3 -->
+            <a href="https://link3.com" class="service-box">
+              <img src="./assets/images/posbakum-logo.png" alt="Icon 3" class="service-icon">
+              <h3 class="service-title">Pos Bantuan Hukum (POSBAKUM)</h3>
+            </a>
+
+            <!-- Box 4 -->
+            <a href="https://link4.com" class="service-box">
+              <img src="./assets/images/ippl-perdata.png" alt="Icon 4" class="service-icon">
+              <h3 class="service-title">Informasi Persyaratan dan Prosedur Layanan Perdata</h3>
+            </a>
+
+            <!-- Box 5 -->
+            <a href="https://link5.com" class="service-box">
+              <img src="./assets/images/ippl-pidana.png" alt="Icon 5" class="service-icon">
+              <h3 class="service-title">Informasi Persyaratan dan Prosedur Layanan Pidana</h3>
+            </a>
+
+            <!-- Box 6 -->
+            <a href="https://link6.com" class="service-box">
+              <img src="./assets/images/ippl-hukum.png" alt="Icon 6" class="service-icon">
+              <h3 class="service-title">Informasi Persyaratan dan Prosedur Layanan Hukum</h3>
+            </a>
+
+            <!-- Box 7 -->
+            <a href="https://link7.com" class="service-box">
+              <img src="./assets/images/statistik.png" alt="Icon 7" class="service-icon">
+              <h3 class="service-title">Statistik Pengadilan</h3>
+            </a>
+
+            <!-- Box 8 -->
+            <a href="https://link8.com" class="service-box">
+              <img src="./assets/images/pengaduan-layanan.png" alt="Icon 8" class="service-icon">
+              <h3 class="service-title">Pengaduan Pelayanan Pengadilan</h3>
+            </a>
+
+            <!-- Box 9 -->
+            <a href="https://link9.com" class="service-box">
+              <img src="./assets/images/perpustakaan.png" alt="Icon 9" class="service-icon">
+              <h3 class="service-title">Perpustakaan Online</h3>
+            </a>
+
+            <!-- Box 10 -->
+            <a href="https://link10.com" class="service-box">
+              <img src="./assets/images/survei-pnjaksel.png" alt="Icon 10" class="service-icon">
+              <h3 class="service-title">SURVEI Pengadilan Negeri Jakarta Selatan</h3>
+            </a>
+
+            <!-- Box 11 -->
+            <a href="https://link11.com" class="service-box">
+              <img src="./assets/images/jdih-pnjaksel.png" alt="Icon 11" class="service-icon">
+              <h3 class="service-title">Jaringan Dokumentasi dan Informasi Hukum (JDIH) Pengadilan Negeri Jakarta Selatan</h3>
+            </a>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+      <!-- 
+        - #FEATURED POST
+      -->
+
+      <section class="section feature" aria-label="feature" id="featured">
+        <div class="container">
+
+          <h2 class="headline headline-2 section-title">
+            <span class="span">Video Terkait</span>
+          </h2>
+
+       
+          <br>
+
+          <ul class="feature-list">
+
+            <li>
+              <div class="card2 feature-card">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                  <iframe width="1602" height="903" src="https://www.youtube.com/embed/ddceHqaJQ-0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen class="img-cover"></iframe>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+
+                    
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Video Profil Pengadilan Negeri Jakarta Selatan 2023
+                    </a>
+                  </h3>
+
+                  <div class="card-wrapper">
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="card2 feature-card">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                  <iframe width="1602" height="903" src="https://www.youtube.com/embed/Ml-JhxWzMig" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen class="img-cover"></iframe>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Video PTSP Pengadilan Negeri Jakarta Selatan Tahun 2024
+                    </a>
+                  </h3>
+
+                  <div class="card-wrapper">
+
+                    
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="card2 feature-card">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                  <iframe width="1602" height="903" src="https://www.youtube.com/embed/pvN4344a7ow" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen class="img-cover"></iframe>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                   
+
+                    
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Video E Court Mahkamah Agung
+                    </a>
+                  </h3>
+
+                  <div class="card-wrapper">
+
+                    <div class="profile-card">
+                      
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="card2 feature-card">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                  <iframe width="1602" height="903" src="https://www.youtube.com/embed/NxGs557ESno" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen class="img-cover"></iframe>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    
+
+                    
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      LAWmotion #21 - Penyelesaian Gugatan Sederhana ("Small Claims Court")
+                    </a>
+                  </h3>
+
+                  <div class="card-wrapper">
+
+                    
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="card2 feature-card">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                  <iframe width="1602" height="903" src="https://www.youtube.com/embed/yDrfrsz7UzQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen class="img-cover"></iframe>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    
+
+                    
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Alur Pelayanan Prioritas bagi Kelompok Rentan di PTSP Pengadilan Negeri Jakarta Selatan
+                    </a>
+                  </h3>
+
+                  <div class="card-wrapper">
+
+                    
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <img src="./assets/images/shadow-3.svg" width="500" height="1500" loading="lazy" alt="" class="feature-bg">
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #POPULAR TAGS
+      -->
+
+      <section class="tags" aria-labelledby="tag-label">
+        <div class="container">
+
+          <h2 class="headline headline-2 section-title" id="tag-label">
+            <span class="span">Tautan</span>
+          </h2>
+
+          <br>
+          <ul class="grid-list">
+
+            <li>
+              <button class="card tag-btn" style="background-color: white">
+                <img src="./assets/images/Logo_Mahkamah_Agung_RI.png" width="32" height="32" loading="lazy" alt="Travel">
+
+                <p class="btn-text">Mahkamah Agung RI</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn" style="background-color: white">
+                <img src="./assets/images/Logo_Mahkamah_Agung_RI.png" width="32" height="32" loading="lazy" alt="Culture">
+
+                <p class="btn-text">Badan Peradilan Umum</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn" style="background-color: white">
+                <img src="./assets/images/pengadilan tinggi dki jakarta.png" width="32" height="32" loading="lazy" alt="Lifestyle">
+
+                <p class="btn-text">Pengadilan Tinggi DKI Jakarta</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn" style="background-color: white">
+                <img src="./assets/images/kejaksaan agung.png" width="32" height="32" loading="lazy" alt="Fashion">
+
+                <p class="btn-text">Kejaksaan Negeri Jakarta Selatan</p>
+              </button>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #RECENT POST
+      -->
+
+      <section class="section recent-post" id="recent" aria-labelledby="recent-label">
+        <div class="container">
+
+          <div class="post-main">
+
+            <h2 class="headline headline-2 section-title">
+              <span class="span">Berita</span>
+            </h2>
+
+            <p class="section-text">
+              Informasi Seputar Berita Terkini.
+            </p>
+
+            <ul class="grid-list">
+
+              <li>
+                <div class="recent-post-card">
+
+                  <figure class="card-banner img-holder" style="--width: 271; --height: 258;">
+                    <img src="./assets/images/recent-post-1.jpg" width="271" height="258" loading="lazy"
+                      alt="Helpful Tips for Working from Home as a Freelancer" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-badge">Working Tips</a>
+
+                    <h3 class="headline headline-3 card-title">
+                      <a href="#" class="link hover-2">Helpful Tips for Working from Home as a Freelancer</a>
+                    </h3>
+
+                    <p class="card-text">
+                      Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard
+                      roadrunner flapped lynx far that and jeepers giggled far and far
+                    </p>
+
+                    <div class="card-wrapper">
+                      <div class="card-tag">
+                        <a href="#" class="span hover-2"># Travel</a>
+
+                        <a href="#" class="span hover-2"># Lifestyle</a>
+                      </div>
+
+                      <div class="wrapper">
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                        <span class="span">3 mins read</span>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="recent-post-card">
+
+                  <figure class="card-banner img-holder" style="--width: 271; --height: 258;">
+                    <img src="./assets/images/recent-post-2.jpg" width="271" height="258" loading="lazy"
+                      alt="Helpful Tips for Working from Home as a Freelancer" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-badge">Working Tips</a>
+
+                    <h3 class="headline headline-3 card-title">
+                      <a href="#" class="link hover-2">Helpful Tips for Working from Home as a Freelancer</a>
+                    </h3>
+
+                    <p class="card-text">
+                      Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard
+                      roadrunner flapped lynx far that and jeepers giggled far and far
+                    </p>
+
+                    <div class="card-wrapper">
+                      <div class="card-tag">
+                        <a href="#" class="span hover-2"># Travel</a>
+
+                        <a href="#" class="span hover-2"># Lifestyle</a>
+                      </div>
+
+                      <div class="wrapper">
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                        <span class="span">3 mins read</span>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="recent-post-card">
+
+                  <figure class="card-banner img-holder" style="--width: 271; --height: 258;">
+                    <img src="./assets/images/recent-post-3.jpg" width="271" height="258" loading="lazy"
+                      alt="Helpful Tips for Working from Home as a Freelancer" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-badge">Working Tips</a>
+
+                    <h3 class="headline headline-3 card-title">
+                      <a href="#" class="link hover-2">Helpful Tips for Working from Home as a Freelancer</a>
+                    </h3>
+
+                    <p class="card-text">
+                      Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard
+                      roadrunner flapped lynx far that and jeepers giggled far and far
+                    </p>
+
+                    <div class="card-wrapper">
+                      <div class="card-tag">
+                        <a href="#" class="span hover-2"># Travel</a>
+
+                        <a href="#" class="span hover-2"># Lifestyle</a>
+                      </div>
+
+                      <div class="wrapper">
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                        <span class="span">3 mins read</span>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="recent-post-card">
+
+                  <figure class="card-banner img-holder" style="--width: 271; --height: 258;">
+                    <img src="./assets/images/recent-post-4.jpg" width="271" height="258" loading="lazy"
+                      alt="Helpful Tips for Working from Home as a Freelancer" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-badge">Working Tips</a>
+
+                    <h3 class="headline headline-3 card-title">
+                      <a href="#" class="link hover-2">Helpful Tips for Working from Home as a Freelancer</a>
+                    </h3>
+
+                    <p class="card-text">
+                      Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard
+                      roadrunner flapped lynx far that and jeepers giggled far and far
+                    </p>
+
+                    <div class="card-wrapper">
+                      <div class="card-tag">
+                        <a href="#" class="span hover-2"># Travel</a>
+
+                        <a href="#" class="span hover-2"># Lifestyle</a>
+                      </div>
+
+                      <div class="wrapper">
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                        <span class="span">3 mins read</span>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="recent-post-card">
+
+                  <figure class="card-banner img-holder" style="--width: 271; --height: 258;">
+                    <img src="./assets/images/recent-post-5.jpg" width="271" height="258" loading="lazy"
+                      alt="Helpful Tips for Working from Home as a Freelancer" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-badge">Working Tips</a>
+
+                    <h3 class="headline headline-3 card-title">
+                      <a href="#" class="link hover-2">Helpful Tips for Working from Home as a Freelancer</a>
+                    </h3>
+
+                    <p class="card-text">
+                      Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard
+                      roadrunner flapped lynx far that and jeepers giggled far and far
+                    </p>
+
+                    <div class="card-wrapper">
+                      <div class="card-tag">
+                        <a href="#" class="span hover-2"># Travel</a>
+
+                        <a href="#" class="span hover-2"># Lifestyle</a>
+                      </div>
+
+                      <div class="wrapper">
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                        <span class="span">3 mins read</span>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+
+            <nav aria-label="pagination" class="pagination">
+
+              <a href="#" class="pagination-btn" aria-label="previous page">
+                <ion-icon name="arrow-back" aria-hidden="true"></ion-icon>
+              </a>
+
+              <a href="#" class="pagination-btn">1</a>
+              <a href="#" class="pagination-btn">2</a>
+              <a href="#" class="pagination-btn">3</a>
+              <a href="#" class="pagination-btn" aria-label="more page">...</a>
+
+              <a href="#" class="pagination-btn" aria-label="next page">
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </a>
+
+            </nav>
+
+          </div>
+
+          <div class="post-aside grid-list">
+            <div class="card2 aside-card">
+              <img src="assets/images/banner-role-model.jpg" alt="banner-role-model" width="100%">
+              <br>
+              <img src="assets/images/banner-agen-perubahan.jpg" alt="banner-agen-perubahan" width="100%">
+            </div>
+
+            <div class="card aside-card">
+
+              <h3 class="headline headline-2 aside-title">
+                <span class="span">Last Comment</span>
+              </h3>
+
+              <ul class="comment-list">
+
+                <li>
+                  <div class="comment-card">
+
+                    <blockquote class="card-text">
+                      “ Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard
+                      roadrunner “
+                    </blockquote>
+
+                    <div class="profile-card">
+                      <figure class="profile-banner img-holder">
+                        <img src="./assets/images/author-6.png" width="32" height="32" loading="lazy" alt="Jane Cooper">
+                      </figure>
+
+                      <div>
+                        <p class="card-title">Jane Cooper</p>
+
+                        <time class="card-date" datetime="2022-04-15">15 April 2022</time>
+                      </div>
+                    </div>
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="comment-card">
+
+                    <blockquote class="card-text">
+                      “ Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard
+                      roadrunner “
+                    </blockquote>
+
+                    <div class="profile-card">
+                      <figure class="profile-banner img-holder">
+                        <img src="./assets/images/author-7.png" width="32" height="32" loading="lazy" alt="Katen Doe">
+                      </figure>
+
+                      <div>
+                        <p class="card-title">Katen Doe</p>
+
+                        <time class="card-date" datetime="2022-04-15">15 April 2022</time>
+                      </div>
+                    </div>
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="comment-card">
+
+                    <blockquote class="card-text">
+                      “ Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard
+                      roadrunner “
+                    </blockquote>
+
+                    <div class="profile-card">
+                      <figure class="profile-banner img-holder">
+                        <img src="./assets/images/author-8.png" width="32" height="32" loading="lazy"
+                          alt="Barbara Cartland">
+                      </figure>
+
+                      <div>
+                        <p class="card-title">Barbara Cartland</p>
+
+                        <time class="card-date" datetime="2022-04-15">15 April 2022</time>
+                      </div>
+                    </div>
+
+                  </div>
+                </li>
+
+              </ul>
+
+            </div>
+
+            <div class="card2 aside-card insta-card">
+
+              <p class="card-text">
+                Follow us on instagram
+              </p>
+
+              <ul class="insta-list">
+
+                <li>
+                  <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                    <img src="./assets/images/insta-post-1.png" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                    <img src="./assets/images/insta-post-2.png" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                    <img src="./assets/images/insta-post-3.png" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                    <img src="./assets/images/insta-post-4.png" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                    <img src="./assets/images/insta-post-5.png" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                    <img src="./assets/images/insta-post-6.png" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                    <img src="./assets/images/insta-post-7.png" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                    <img src="./assets/images/insta-post-8.png" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                    <img src="./assets/images/insta-post-9.png" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+
+            
+          </div>
+
+          
+        </div>
+        <br><br>
+        <div class="map-container">
+          <h1>Lokasi Pengadilan Negeri Jakarta Selatan Kelas 1A Khusus</h1>
+      
+          <!-- Google Maps atau OpenStreetMap iframe -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.863687273515!2d106.81737687590693!3d-6.281644593707225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3f700000001%3A0x29b7ed9c989b93ab!2sPengadilan%20Negeri%20Jakarta%20Selatan%20Kelas%20IA%20Khusus!5e0!3m2!1sid!2sid!4v1727073122009!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      
+          <small><a href="https://maps.app.goo.gl/tk7ctFrQwg3zUuEy6" target="_blank">Lihat peta lebih besar</a></small>
+        </div>
+      
+      </section>
+    </article>
+  </main>
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer>
+    <div class="container2">
+
+      <div class="card footer">
+
+        <div class="section footer-top">
+
+          <div class="footer-brand">
+            <p class="footer-list-title">Alamat</p>
+
+            <address class="footer-text address">
+              Jl. Ampera Raya No.133, RT.5/RW.10, Ragunan, 
+              <br>Ps. Minggu, Kota Jakarta Selatan, <br>
+              Daerah Khusus Ibukota Jakarta 12540
+            </address>
+
+          </div>
+
+          <div class="footer-brand">
+
+            <p class="footer-list-title">Media Sosial</p>
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/profile.php?id=61550536585070" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+  
+                  <span class="span">Facebook</span>
+                </a>
+              </li>
+  
+              <li>
+                <a href="https://www.linkedin.com/company/pengadilan-negeri-jakarta-selatan/" class="social-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+  
+                  <span class="span">LinkedIn</span>
+                </a>
+              </li>
+  
+              <li>
+                <a href="https://www.instagram.com/pn.jakartaselatan/" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+  
+                  <span class="span">Instagram</span>
+                </a>
+              </li>
+
+      
+
+            </ul>
+
+          </div>
+
+          
+
+        </div>
+
+        <div class="footer-bottom">
+
+          <p class="copyright">
+            © 2025 Pengadilan Negeri Jakarta Selatan Kelas 1A Khusus
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
